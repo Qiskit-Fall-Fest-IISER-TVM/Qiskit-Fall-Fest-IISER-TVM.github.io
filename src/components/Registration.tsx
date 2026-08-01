@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { SectionBackground } from "@/components/SectionBackground";
 
 export function Registration() {
   return (
-    <section id="register" className="py-24 relative overflow-hidden">
+    <SectionBackground className="py-24">
       <div className="absolute inset-0 bg-primary/5 dark:bg-primary/10"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/20 blur-[120px] rounded-full pointer-events-none"></div>
       
@@ -38,6 +39,6 @@ export function Registration() {
           </form>
         </motion.div>
       </div>
-    </section>
+    </SectionBackground>
   );
 }
