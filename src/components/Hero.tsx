@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section className="relative min-h-[100dvh] flex items-center justify-center pt-20 overflow-hidden">
       {/* Background Image & Overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-fixed">
         <img 
           src={heroBg} 
           alt="Quantum Circuit Background" 
