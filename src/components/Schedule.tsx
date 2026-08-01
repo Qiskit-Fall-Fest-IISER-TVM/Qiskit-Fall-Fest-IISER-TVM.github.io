@@ -88,6 +88,6 @@ export function Schedule() {
           ))}
         </div>
       </div>
-    </section>
+    </SectionBackground>
   );
 }
