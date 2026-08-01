@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import aboutBg from "../assets/about-bg.png";
+import aboutBg from "../assets/venue-bg.png";
 import { SiQiskit } from "react-icons/si";
 
 export function About() {
