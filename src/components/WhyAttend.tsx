@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Code2, BookOpen, Network, Trophy } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { SectionBackground } from "@/components/SectionBackground";
 
 export function WhyAttend() {
   const reasons = [
