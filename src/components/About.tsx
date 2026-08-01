@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import aboutBg from "../assets/venue-bg.png";
+import aboutBg from "../assets/about-bg.png";
 import { SiQiskit } from "react-icons/si";
 
 export function About() {
@@ -50,8 +50,8 @@ export function About() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0.6, scale: 0.95 }}
+            whileInView={{ opacity: 0.6, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="relative"
