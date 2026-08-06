@@ -1,4 +1,4 @@
-import venueBg from "@/assets/venue-bg.png";
+import heroBg from "@/assets/Hero_1_without_title.png";
 
 interface SectionBackgroundProps {
   children: React.ReactNode;
@@ -13,7 +13,7 @@ export function SectionBackground({
     <section
       className={`relative overflow-hidden ${className}`}
       style={{
-        backgroundImage: `url(${venueBg})`,
+        backgroundImage: `url(${heroBg})`,
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
