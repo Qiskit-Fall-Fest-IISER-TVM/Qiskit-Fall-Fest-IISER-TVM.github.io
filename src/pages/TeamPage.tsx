@@ -201,6 +201,28 @@ export default function TeamPage() {
 
       </section>
 
+      {/* Volunteers */}
+
+      <section className="py-24">
+
+        <div className="container mx-auto px-6">
+
+          <h2 className="text-4xl font-bold text-center">
+            Volunteers
+          </h2>
+
+          <p className="text-center text-muted-foreground mt-4 mb-16">
+            Coming soon...
+          </p>
+
+        </div>
+
+      </section>
+
+    </div>
+  );
+}
+
     </div>
   );
 }
