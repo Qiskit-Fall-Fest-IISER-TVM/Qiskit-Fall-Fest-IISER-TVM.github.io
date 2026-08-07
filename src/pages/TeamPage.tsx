@@ -22,6 +22,45 @@ const facultyAdvisors = [
   },
 ];
 
+const organizers = [
+  {
+    name: "Naman Agarwal",
+    //image: image1,
+    scholar: "#",
+    linkedin: "#",
+  },
+  {
+    name: "Debashis Saikia",
+    //image: image2,
+    scholar: "#",
+    linkedin: "#",
+  },
+  {
+    name: "Ajit Gopalakrishna Bhat",
+    //image: image3,
+    scholar: "#",
+    linkedin: "#",
+  },
+  {
+    name: "Khushi Tiwari",
+    //image: image4,
+    scholar: "#",
+    linkedin: "#",
+  },
+  {
+    name: "Leyana K P",
+    //image: image5,
+    scholar: "#",
+    linkedin: "#",
+  },
+  {
+    name: "Aman Vijay Tallur",
+    //image: image6,
+    scholar: "#",
+    linkedin: "#",
+  },
+];
+
 export default function TeamPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
