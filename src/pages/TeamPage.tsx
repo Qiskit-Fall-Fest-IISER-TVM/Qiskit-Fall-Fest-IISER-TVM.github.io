@@ -158,21 +158,28 @@ export default function TeamPage() {
 
       {/* Placeholder for Student Organizing Committee */}
 
-      <section className="pb-24">
+      <section className="py-24">
 
-        <div className="container mx-auto px-6">
+        <h2 className="text-4xl font-bold text-center mb-4">
+          Student Organizing Committee
+        </h2>
 
-          <h2 className="text-4xl font-bold text-center mb-6">
-            Student Organizing Committee
-          </h2>
+        <p className="text-center text-muted-foreground mb-16">
+          The student team coordinating Qiskit Fall Fest 2026.
+        </p>
 
-          <p className="text-center text-muted-foreground">
-            Coming Soon...
-          </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
+
+        {organizers.map((member) => (
+          <StudentCard
+            key={member.name}
+            {...member}
+          />
+        ))}
 
         </div>
 
-      </section>
+    </section>
 
     </div>
   );
