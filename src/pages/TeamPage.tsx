@@ -14,7 +14,7 @@ const facultyAdvisors = [
     website: "https://www.iisertvm.ac.in/faculty/shaji",
   },
   {
-    name: "Prof. Madhu S. N.",
+    name: "Prof. Madhu Thalakulam",
     role: "Faculty Advisor",
     //image: madhuPhoto,
     scholar: "https://scholar.google.com/citations?user=3--YLbIAAAAJ&hl=en",
