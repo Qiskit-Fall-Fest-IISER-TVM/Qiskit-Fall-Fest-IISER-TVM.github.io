@@ -1,9 +1,9 @@
 import { GraduationCap, Globe } from "lucide-react";
 import { StudentCard } from "@/components/StudentCard";
 
-// Uncomment these when you add the photos
-// import madhuPhoto from "@/assets/team/madhu.jpg";
+// Uncomment these after adding the faculty photos
 // import shajiPhoto from "@/assets/team/shaji.jpg";
+// import madhuPhoto from "@/assets/team/madhu.jpg";
 
 const facultyAdvisors = [
   {
@@ -27,43 +27,43 @@ const facultyAdvisors = [
 const organizers = [
   {
     name: "Naman Agarwal",
-    role: "5th year BS-MS (Physics)",
-    //image: img1,
+    role: "5th Year BS-MS (Physics)",
+    // image: img1,
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Debashis Saikia",
-    role: "4th year BS-MS (Physics)",
-    //image: img2,
+    role: "4th Year BS-MS (Physics)",
+    // image: img2,
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Ajit Gopalakrishna Bhat",
-    role: "4th year BS-MS (Physics)",
-    //image: img3,
+    role: "4th Year BS-MS (Physics)",
+    // image: img3,
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Khushi Tiwari",
-    role: "5th year BS-MS (Physics)",
-    //image: img4,
+    role: "5th Year BS-MS (Physics)",
+    // image: img4,
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Leyana K P",
-    role: "4th year BS-MS (Physics)",
-    //image: img5,
+    role: "4th Year BS-MS (Physics)",
+    // image: img5,
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Aman Vijay Tallur",
-    role: "4th year BS-MS (Physics)",
-    //image: img6,
+    role: "4th Year BS-MS (Physics)",
+    // image: img6,
     scholar: "#",
     linkedin: "#",
   },
@@ -116,11 +116,11 @@ export default function TeamPage() {
                 className="flex flex-col items-center text-center"
               >
 
-                {/* Replace this with <img> once photos are available */}
+                {/* Replace this placeholder with the faculty photo */}
 
                 <div className="w-56 h-56 rounded-full bg-muted border-4 border-primary shadow-xl flex items-center justify-center text-6xl font-bold">
 
-                  {advisor.name.split(" ")[1][0]}
+                  {advisor.name.replace("Prof. ", "").charAt(0)}
 
                 </div>
 
@@ -128,7 +128,7 @@ export default function TeamPage() {
                   {advisor.name}
                 </h3>
 
-                <p className="text-muted-foreground mt-2">
+                <p className="mt-2 text-muted-foreground">
                   {advisor.role}
                 </p>
 
@@ -187,12 +187,10 @@ export default function TeamPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
 
             {organizers.map((member) => (
-
               <StudentCard
                 key={member.name}
                 {...member}
               />
-
             ))}
 
           </div>
@@ -200,6 +198,10 @@ export default function TeamPage() {
         </div>
 
       </section>
+
+      <div className="container mx-auto px-6">
+        <div className="border-t border-border"></div>
+      </div>
 
       {/* Volunteers */}
 
@@ -211,17 +213,13 @@ export default function TeamPage() {
             Volunteers
           </h2>
 
-          <p className="text-center text-muted-foreground mt-4 mb-16">
-            Coming soon...
+          <p className="text-center text-muted-foreground mt-4">
+            Volunteer profiles will be announced soon.
           </p>
 
         </div>
 
       </section>
-
-    </div>
-  );
-}
 
     </div>
   );
