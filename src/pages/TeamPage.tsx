@@ -1,23 +1,25 @@
 import { GraduationCap, Globe } from "lucide-react";
+import { StudentCard } from "@/components/StudentCard";
 
-// Import the faculty photos
-// Replace these with your actual image imports
-//import madhuPhoto from "@/assets/madhu.jpg";
-//import shajiPhoto from "@/assets/shaji.jpg";
+// Uncomment these when you add the photos
+// import madhuPhoto from "@/assets/team/madhu.jpg";
+// import shajiPhoto from "@/assets/team/shaji.jpg";
 
 const facultyAdvisors = [
   {
     name: "Prof. Anil Shaji",
     role: "Faculty Advisor",
-    //image: shajiPhoto,
-    scholar: "https://scholar.google.com/citations?user=Pp5t7VsAAAAJ&hl=en",
+    // image: shajiPhoto,
+    scholar:
+      "https://scholar.google.com/citations?user=Pp5t7VsAAAAJ&hl=en",
     website: "https://www.iisertvm.ac.in/faculty/shaji",
   },
   {
     name: "Prof. Madhu Thalakulam",
     role: "Faculty Advisor",
-    //image: madhuPhoto,
-    scholar: "https://scholar.google.com/citations?user=3--YLbIAAAAJ&hl=en",
+    // image: madhuPhoto,
+    scholar:
+      "https://scholar.google.com/citations?user=3--YLbIAAAAJ&hl=en",
     website: "https://www.iisertvm.ac.in/faculty/madhu",
   },
 ];
@@ -25,37 +27,31 @@ const facultyAdvisors = [
 const organizers = [
   {
     name: "Naman Agarwal",
-    //image: image1,
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Debashis Saikia",
-    //image: image2,
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Ajit Gopalakrishna Bhat",
-    //image: image3,
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Khushi Tiwari",
-    //image: image4,
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Leyana K P",
-    //image: image5,
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Aman Vijay Tallur",
-    //image: image6,
     scholar: "#",
     linkedin: "#",
   },
@@ -65,7 +61,7 @@ export default function TeamPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
 
-      {/* Hero Section */}
+      {/* Hero */}
 
       <section className="pt-36 pb-20 text-center">
 
@@ -76,9 +72,9 @@ export default function TeamPage() {
           </h1>
 
           <p className="mt-6 max-w-3xl mx-auto text-lg text-muted-foreground">
-            Meet the faculty members, student organizers and volunteers
-            working together to make IBM Qiskit Fall Fest 2026 at
-            IISER Thiruvananthapuram a memorable experience.
+            Meet the faculty members and student organizers working together
+            to make IBM Qiskit Fall Fest 2026 at IISER Thiruvananthapuram
+            a memorable experience.
           </p>
 
         </div>
@@ -91,15 +87,15 @@ export default function TeamPage() {
 
         <div className="container mx-auto px-6">
 
-          <h2 className="text-4xl font-bold text-center mb-4">
+          <h2 className="text-4xl font-bold text-center">
             Faculty Advisors
           </h2>
 
-          <p className="text-center text-muted-foreground mb-16">
+          <p className="text-center text-muted-foreground mt-4 mb-16">
             Academic guidance and mentorship for the organizing committee.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
 
             {facultyAdvisors.map((advisor) => (
 
@@ -108,17 +104,19 @@ export default function TeamPage() {
                 className="flex flex-col items-center text-center"
               >
 
-                <img
-                  src={advisor.image}
-                  alt={advisor.name}
-                  className="w-48 h-48 rounded-full object-cover border-4 border-primary shadow-xl"
-                />
+                {/* Replace this with <img> once photos are available */}
+
+                <div className="w-56 h-56 rounded-full bg-muted border-4 border-primary shadow-xl flex items-center justify-center text-6xl font-bold">
+
+                  {advisor.name.split(" ")[1][0]}
+
+                </div>
 
                 <h3 className="mt-8 text-3xl font-semibold">
                   {advisor.name}
                 </h3>
 
-                <p className="mt-2 text-muted-foreground">
+                <p className="text-muted-foreground mt-2">
                   {advisor.role}
                 </p>
 
@@ -156,30 +154,40 @@ export default function TeamPage() {
 
       </section>
 
-      {/* Placeholder for Student Organizing Committee */}
+      <div className="container mx-auto px-6">
+        <div className="border-t border-border"></div>
+      </div>
+
+      {/* Student Organizing Committee */}
 
       <section className="py-24">
 
-        <h2 className="text-4xl font-bold text-center mb-4">
-          Student Organizing Committee
-        </h2>
+        <div className="container mx-auto px-6">
 
-        <p className="text-center text-muted-foreground mb-16">
-          The student team coordinating Qiskit Fall Fest 2026.
-        </p>
+          <h2 className="text-4xl font-bold text-center">
+            Student Organizing Committee
+          </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
+          <p className="text-center text-muted-foreground mt-4 mb-16">
+            The student team coordinating IBM Qiskit Fall Fest 2026.
+          </p>
 
-        {organizers.map((member) => (
-          <StudentCard
-            key={member.name}
-            {...member}
-          />
-        ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+
+            {organizers.map((member) => (
+
+              <StudentCard
+                key={member.name}
+                {...member}
+              />
+
+            ))}
+
+          </div>
 
         </div>
 
-    </section>
+      </section>
 
     </div>
   );
