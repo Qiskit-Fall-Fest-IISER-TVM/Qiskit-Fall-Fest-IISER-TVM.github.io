@@ -8,7 +8,7 @@ import { StudentCard } from "@/components/StudentCard";
 const facultyAdvisors = [
   {
     name: "Prof. Anil Shaji",
-    role: "Faculty Advisor",
+    role: "Professor",
     // image: shajiPhoto,
     scholar:
       "https://scholar.google.com/citations?user=Pp5t7VsAAAAJ&hl=en",
@@ -16,7 +16,7 @@ const facultyAdvisors = [
   },
   {
     name: "Prof. Madhu Thalakulam",
-    role: "Faculty Advisor",
+    role: "Associate Professor",
     // image: madhuPhoto,
     scholar:
       "https://scholar.google.com/citations?user=3--YLbIAAAAJ&hl=en",
@@ -27,31 +27,37 @@ const facultyAdvisors = [
 const organizers = [
   {
     name: "Naman Agarwal",
+    role: "5th year BS-MS (Physics)",
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Debashis Saikia",
+    role: "4th year BS-MS (Physics)",
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Ajit Gopalakrishna Bhat",
+    role: "4th year BS-MS (Physics)",
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Khushi Tiwari",
+    role: "5th year BS-MS (Physics)",
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Leyana K P",
+    role: "4th year BS-MS (Physics)",
     scholar: "#",
     linkedin: "#",
   },
   {
     name: "Aman Vijay Tallur",
+    role: "4th year BS-MS (Physics)",
     scholar: "#",
     linkedin: "#",
   },
